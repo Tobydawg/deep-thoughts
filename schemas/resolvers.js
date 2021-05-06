@@ -22,7 +22,7 @@ const resolvers = {
     thought: async (parent, { _id }) => {
       return Thought.findOne({ _id });
     },
-
+  },
       Mutation: {
         addUser: async (parent, args) => {
           const user = await User.create(args);
@@ -34,7 +34,7 @@ const resolvers = {
         login: async () => {
           }    
         }
-  }
+  
 };
 
 module.exports = resolvers;
